@@ -42,6 +42,9 @@ After setup, **STOP**. You're using an existing application, so make sure to rea
 
 #### Part 1: Create a Category model
 
+sequelize model:create --name category --attributes name:string
+sequelize model:create --name categories_projects --attributes categoryId:integer,projectId:integer
+
 In order to add categories, create a Sequelize model to store categories. It's recommended that you name this model `category`. It will store one attribute: the name of the category (a string).
 
 Once this model has been created, run the migration for the model and test the model's functionality. This can be done in a separate file. An example:
